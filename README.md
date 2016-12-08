@@ -1,4 +1,4 @@
-# AnalyzingVisualizationSample-ForAndroid
+# #  Analyzing Visualization Sample  for Android
 
 ### Description
 
