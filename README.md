@@ -4,7 +4,7 @@
 
 This samples shows you how to explore the different styles available to help you analyze and visualize your data.
 
-Please refer to [Wiki](System.String[]) for the details.
+Please refer to [Wiki](http://wiki.thinkgeo.com/wiki/map_suite_mobile_for_android) for the details.
 
 ![Screenshot](https://github.com/ThinkGeo/AnalyzingVisualizationSample-ForAndroid/blob/master/ScreenShot.png)
 
