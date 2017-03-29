@@ -4,6 +4,8 @@
 
 This samples shows you how to explore the different styles available to help you analyze and visualize your data.
 
+Please refer to [Wiki](http://wiki.thinkgeo.com/wiki/map_suite_desktop_for_wpf) for the details.
+
 ![Screenshot](https://github.com/ThinkGeo/AnalyzingVisualizationSample-ForAndroid/blob/master/ScreenShot.png)
 
 ### Requirements
@@ -17,9 +19,9 @@ Working...
 
 ### Getting Help
 
-[Map Suite Android Wiki Resources](http://wiki.thinkgeo.com/wiki/map_suite_android_edition)
+[Map Suite Android Wiki Resources](http://wiki.thinkgeo.com/wiki/map_suite_mobile_for_android)
 
-[Map Suite Android Product Description](http://thinkgeo.com/map-suite-developer-gis/android-edition/)
+[Map Suite Android Product Description](https://thinkgeo.com/ui-controls#mobile-platforms)
 
 [ThinkGeo Community Site](http://community.thinkgeo.com/)
 
