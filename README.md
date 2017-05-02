@@ -15,22 +15,26 @@ This sample makes use of the following NuGet Packages
 
 ### About the Code
 
-Working...
+```csharp
+filterStyle.Conditions.Clear();
+SimpleFilterCondition newCondition = new SimpleFilterCondition(nameTextView.Text, (SimpleFilterConditionType)conditionSpinner.SelectedItemId, valueEditText.Text);
+filterStyle.Conditions.Add(newCondition);
+MapView.Overlays["LayerOverlay"].Refresh();
+```
 
 ### Getting Help
 
-[Map Suite mobile for Android Wiki Resources](http://wiki.thinkgeo.com/wiki/map_suite_mobile_for_android)
-
-[Map Suite mobile for Android Product Description](https://thinkgeo.com/ui-controls#mobile-platforms)
-
-[ThinkGeo Community Site](http://community.thinkgeo.com/)
-
-[ThinkGeo Web Site](http://www.thinkgeo.com)
+- [Map Suite mobile for Android Wiki Resources](http://wiki.thinkgeo.com/wiki/map_suite_mobile_for_android)
+- [Map Suite mobile for Android Product Description](https://thinkgeo.com/ui-controls#mobile-platforms)
+- [ThinkGeo Community Site](http://community.thinkgeo.com/)
+- [ThinkGeo Web Site](http://www.thinkgeo.com)
 
 ### Key APIs
 This example makes use of the following APIs:
 
-Working...
+- [ThinkGeo.MapSuite.Styles.FilterStyle](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.styles.filterstyle)
+- [ThinkGeo.MapSuite.Styles.SimpleFilterCondition](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.styles.simplefiltercondition)
+- [ThinkGeo.MapSuite.Android.LayerOverlay](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.android.layeroverlay)
 
 ### About Map Suite
 Map Suite is a set of powerful development components and services for the .Net Framework.
