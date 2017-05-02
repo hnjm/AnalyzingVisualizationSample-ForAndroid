@@ -16,10 +16,9 @@ This sample makes use of the following NuGet Packages
 ### About the Code
 
 ```csharp
-filterStyle.Conditions.Clear();
-SimpleFilterCondition newCondition = new SimpleFilterCondition(nameTextView.Text, (SimpleFilterConditionType)conditionSpinner.SelectedItemId, valueEditText.Text);
-filterStyle.Conditions.Add(newCondition);
-MapView.Overlays["LayerOverlay"].Refresh();
+clusterPointStyleFeatureLayer.ZoomLevelSet.ZoomLevel01.CustomStyles.Clear();
+clusterPointStyleFeatureLayer.ZoomLevelSet.ZoomLevel01.CustomStyles.Add(GetClusterPointStyle());
+clusterPointStyleFeatureLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
 ```
 
 ### Getting Help
@@ -32,8 +31,8 @@ MapView.Overlays["LayerOverlay"].Refresh();
 ### Key APIs
 This example makes use of the following APIs:
 
-- [ThinkGeo.MapSuite.Styles.FilterStyle](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.styles.filterstyle)
-- [ThinkGeo.MapSuite.Styles.SimpleFilterCondition](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.styles.simplefiltercondition)
+- [ThinkGeo.MapSuite.Styles.PointStyle](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.styles.pointstyle)
+- [ThinkGeo.MapSuite.Layers.ShapeFileFeatureLayer](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.layers.shapefilefeaturelayer)
 - [ThinkGeo.MapSuite.Android.LayerOverlay](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.android.layeroverlay)
 
 ### About Map Suite
