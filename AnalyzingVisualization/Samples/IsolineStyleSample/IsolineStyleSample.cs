@@ -14,14 +14,7 @@ namespace AnalyzingVisualization
 
         protected override void InitializeMap()
         {
-            MapView.MapUnit = GeographyUnit.Meter;
             MapView.CurrentExtent = new RectangleShape(-15116491.8671313, 8720801.79162702, -11021545.2583953, 2603975.29482756);
-
-            WorldMapKitOverlay worldOverlay = (WorldMapKitOverlay)MapView.Overlays["WMK"];
-            worldOverlay.Projection = ThinkGeo.MapSuite.Android.WorldMapKitProjection.SphericalMercator;
-            string baseFolder = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath;
-            string cachePathFilename = System.IO.Path.Combine(baseFolder, "MapSuiteTileCaches/SampleCaches.db");
-            worldOverlay.TileCache = new SqliteBitmapTileCache(cachePathFilename, "SphericalMercator");
 
             EarthquakeIsoLineFeatureLayer usEarthquakeIsoLayer = new EarthquakeIsoLineFeatureLayer(new ShapeFileFeatureSource(SampleHelper.GetDataPath("usEarthquake_Simplified.shp")));
             LayerOverlay layerOverlay = new LayerOverlay();

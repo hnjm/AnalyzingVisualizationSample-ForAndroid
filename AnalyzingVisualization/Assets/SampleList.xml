@@ -1,8 +1,8 @@
 <StyleList>
-  <Sample Name="Cluster Style" Class="ClusterPointStyleSample"  Image="clusterstyle">
+  <Sample Name="Custom Style" Class="CustomStyleSample"  Image="customstyle">
     <Description></Description>
   </Sample>
-  <Sample Name="Custom Style" Class="CustomStyleSample"  Image="customstyle">
+  <Sample Name="Cluster Style" Class="ClusterPointStyleSample"  Image="clusterstyle">
     <Description></Description>
   </Sample>
   <Sample Name="Filter Style" Class="FilterStyleSample"  Image="filterstyle">

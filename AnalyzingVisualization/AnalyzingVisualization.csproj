@@ -15,14 +15,14 @@
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
-    <NuGetPackageImportStamp></NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -65,71 +65,62 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GeoAPI, Version=1.7.4.0, Culture=neutral, PublicKeyToken=a1a0da7def465678, processorArchitecture=MSIL">
-      <HintPath>..\packages\MapSuiteDependency-GeoAPI.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\GeoAPI.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\MapSuiteDependency-GeoAPI.10.4.0\lib\MonoAndroid\GeoAPI.dll</HintPath>
     </Reference>
     <Reference Include="GeoAPI.Bootstrapper.NetTopologySuite, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
-      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\GeoAPI.Bootstrapper.NetTopologySuite.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.4.0\lib\MonoAndroid\GeoAPI.Bootstrapper.NetTopologySuite.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="mscorlib" />
     <Reference Include="NetTopologySuite, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
-      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\NetTopologySuite.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.4.0\lib\MonoAndroid\NetTopologySuite.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteDependency-NewtonsoftJson.10.4.0\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="PowerCollections, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2573bf8a1bdddcd5, processorArchitecture=MSIL">
-      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\PowerCollections.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.4.0\lib\MonoAndroid\PowerCollections.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
-    <Reference Include="ThinkGeo.MapSuite, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="ThinkGeo.Cloud.Client, Version=10.4.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.Cloud.Client.10.4.2\lib\MonoAndroid\ThinkGeo.Cloud.Client.dll</HintPath>
     </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Android, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MapSuiteMobileForAndroid-BareBone.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Android.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="ThinkGeo.MapSuite, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.10.4.0\lib\MonoAndroid\ThinkGeo.MapSuite.dll</HintPath>
     </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Grids, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Grids.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Layers.Grids.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="ThinkGeo.MapSuite.Android, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteMobileForAndroid-BareBone.10.4.1\lib\MonoAndroid\ThinkGeo.MapSuite.Android.dll</HintPath>
     </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.Heat, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Heat.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Layers.Heat.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Grids, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Grids.10.4.0\lib\MonoAndroid\ThinkGeo.MapSuite.Layers.Grids.dll</HintPath>
     </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.IsoLine, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.IsoLine.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Layers.IsoLine.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Heat, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Heat.10.4.0\lib\MonoAndroid\ThinkGeo.MapSuite.Layers.Heat.dll</HintPath>
     </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Layers.ShapeFile, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.ShapeFile.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Layers.ShapeFile.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="ThinkGeo.MapSuite.Layers.IsoLine, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.IsoLine.10.4.0\lib\MonoAndroid\ThinkGeo.MapSuite.Layers.IsoLine.dll</HintPath>
     </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Styles.ClassBreak, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.ClassBreak.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Styles.ClassBreak.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="ThinkGeo.MapSuite.Layers.ShapeFile, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.ShapeFile.10.4.0\lib\MonoAndroid\ThinkGeo.MapSuite.Layers.ShapeFile.dll</HintPath>
     </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Styles.DotDensity, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.DotDensity.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Styles.DotDensity.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="ThinkGeo.MapSuite.Styles.ClassBreak, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.ClassBreak.10.4.0\lib\MonoAndroid\ThinkGeo.MapSuite.Styles.ClassBreak.dll</HintPath>
     </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Styles.Filter, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.Filter.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Styles.Filter.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="ThinkGeo.MapSuite.Styles.DotDensity, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.DotDensity.10.4.0\lib\MonoAndroid\ThinkGeo.MapSuite.Styles.DotDensity.dll</HintPath>
     </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Styles.Icon, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.Icon.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Styles.Icon.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="ThinkGeo.MapSuite.Styles.Filter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.Filter.10.4.0\lib\MonoAndroid\ThinkGeo.MapSuite.Styles.Filter.dll</HintPath>
     </Reference>
-    <Reference Include="ThinkGeo.MapSuite.Styles.Value, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.Value.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Styles.Value.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="ThinkGeo.MapSuite.Styles.Icon, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.Icon.10.4.0\lib\MonoAndroid\ThinkGeo.MapSuite.Styles.Icon.dll</HintPath>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Styles.Value, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.Value.10.4.0\lib\MonoAndroid\ThinkGeo.MapSuite.Styles.Value.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -176,7 +167,7 @@
     <AndroidAsset Include="Assets\AppData\Vehicles.dbf" />
     <AndroidAsset Include="Assets\AppData\Vehicles.ids" />
     <AndroidAsset Include="Assets\AppData\Vehicles.idx" />
-    <AndroidAsset Include="Assets\AppData\Vehicles.prj" />
+    <None Include="Assets\AppData\Vehicles.prj11111" />
     <AndroidAsset Include="Assets\AppData\Vehicles.shp" />
     <AndroidAsset Include="Assets\AppData\Vehicles.shx" />
     <AndroidAsset Include="Assets\AppData\usEarthquake_Simplified.dbf" />
@@ -184,9 +175,8 @@
     <AndroidAsset Include="Assets\AppData\usEarthquake_Simplified.idx" />
     <AndroidAsset Include="Assets\AppData\usEarthquake_Simplified.shp" />
     <AndroidAsset Include="Assets\AppData\usEarthquake_Simplified.shx" />
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\SampleBaseLayout.axml">

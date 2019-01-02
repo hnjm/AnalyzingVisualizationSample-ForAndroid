@@ -22,13 +22,13 @@ namespace AnalyzingVisualization
         protected override void InitializeMap()
         {
             MapView.MapUnit = GeographyUnit.Meter;
-            MapView.CurrentExtent = new RectangleShape(-13886070, 6660597, -8906057, 3382985);
+            MapView.ZoomLevelSet = ThinkGeoCloudMapsOverlay.GetZoomLevelSet();
+            MapView.CurrentExtent = new RectangleShape(-13886070, 5660597, -8906057, 2382985);
 
-            WorldMapKitOverlay worldOverlay = (WorldMapKitOverlay)MapView.Overlays["WMK"];
-            worldOverlay.Projection = ThinkGeo.MapSuite.Android.WorldMapKitProjection.SphericalMercator;
+            ThinkGeoCloudMapsOverlay thinkGeoCloudMapsOverlay = (ThinkGeoCloudMapsOverlay)MapView.Overlays["WMK"];
             string baseFolder = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath;
             string cachePathFilename = Path.Combine(baseFolder, "MapSuiteTileCaches/SampleCaches.db");
-            worldOverlay.TileCache = new SqliteBitmapTileCache(cachePathFilename, "SphericalMercator");
+            thinkGeoCloudMapsOverlay.TileCache = new SqliteBitmapTileCache(cachePathFilename, "SphericalMercator");
 
             LineStyle lineStyle = LineStyles.CreateSimpleLineStyle(GeoColor.FromArgb(255, 50, 0, 249), 4, false);
 

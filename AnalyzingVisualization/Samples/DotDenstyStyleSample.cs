@@ -16,8 +16,7 @@ namespace AnalyzingVisualization
 
         protected override void InitializeMap()
         {
-            MapView.MapUnit = GeographyUnit.DecimalDegree;
-            MapView.CurrentExtent = new RectangleShape(-128.455625, 88.474096875, -65.174375, -9.084496875);
+            MapView.CurrentExtent = new RectangleShape(-14299615, 20037508, -7255178, -1015546);
 
             ShapeFileFeatureLayer usLayer = new ShapeFileFeatureLayer(SampleHelper.GetDataPath("usStatesCensus2010.shp"));
             LayerOverlay layerOverlay = new LayerOverlay();
@@ -26,7 +25,7 @@ namespace AnalyzingVisualization
 
             usLayer.ZoomLevelSet.ZoomLevel01.CustomStyles.Clear();
             usLayer.ZoomLevelSet.ZoomLevel01.CustomStyles.Add(new AreaStyle(new GeoPen(new GeoSolidBrush(GeoColor.SimpleColors.Black))));
-
+            //TODO: check this
             double pointToValueRatio = 0.0000094778167166538189;
             PointStyle pointStyle = PointStyles.CreateSimpleCircleStyle(GeoColor.StandardColors.Black, 7);
             DotDensityStyle dotDensityStyle = new DotDensityStyle("Population", pointToValueRatio, pointStyle);

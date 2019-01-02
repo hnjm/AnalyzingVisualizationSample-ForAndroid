@@ -16,8 +16,7 @@ namespace AnalyzingVisualization
 
         protected override void InitializeMap()
         {
-            MapView.MapUnit = GeographyUnit.DecimalDegree;
-            MapView.CurrentExtent = new RectangleShape(-96.8924, 33.3525, -96.6453, 32.9714);
+            MapView.CurrentExtent = new RectangleShape(-10786013, 3942186, -10758506, 3891508);
 
             ShapeFileFeatureLayer iconStyleFeatureLayer = new ShapeFileFeatureLayer(SampleHelper.GetDataPath("Vehicles.shp"));
             LayerOverlay layerOverlay = new LayerOverlay();

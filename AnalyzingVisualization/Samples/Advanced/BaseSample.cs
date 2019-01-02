@@ -5,6 +5,7 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using System;
+using ThinkGeo.MapSuite;
 using ThinkGeo.MapSuite.Android;
 using ThinkGeo.MapSuite.Layers;
 
@@ -40,7 +41,7 @@ namespace AnalyzingVisualization
         /// </summary>
         protected MapView MapView
         {
-            get { return mapView ?? (mapView = new MapView(Application.Context)); }
+            get { return mapView; }
         }
 
         /// <summary>
@@ -62,6 +63,8 @@ namespace AnalyzingVisualization
                 mapContainerView.RemoveAllViews();
 
                 mapView = new MapView(Application.Context);
+                mapView.MapUnit = GeographyUnit.Meter;
+                mapView.ZoomLevelSet = ThinkGeoCloudMapsOverlay.GetZoomLevelSet();
                 mapView.SetBackgroundColor(Color.Argb(255, 244, 242, 238));
                 mapContainerView.AddView(mapView);
 
@@ -126,14 +129,12 @@ namespace AnalyzingVisualization
         {
             if (!MapView.Overlays.Contains("WMK"))
             {
-                WorldMapKitOverlay worldOverlay = new WorldMapKitOverlay();
-                worldOverlay.TileType = TileType.MultiTile;
-                worldOverlay.Projection = ThinkGeo.MapSuite.Android.WorldMapKitProjection.DecimalDegrees;
+                ThinkGeoCloudMapsOverlay thinkGeoCloudMapsOverlay = new ThinkGeoCloudMapsOverlay();
 
                 string baseFolder = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath;
                 string cachePathFilename = System.IO.Path.Combine(baseFolder, "MapSuiteTileCaches/SampleCaches.db");
-                worldOverlay.TileCache = new SqliteBitmapTileCache(cachePathFilename, "DecimalDegrees");
-                MapView.Overlays.Insert(0, "WMK", worldOverlay);
+                thinkGeoCloudMapsOverlay.TileCache = new SqliteBitmapTileCache(cachePathFilename, "SphericalMercator");
+                MapView.Overlays.Insert(0, "WMK", thinkGeoCloudMapsOverlay);
             }
         }
     }

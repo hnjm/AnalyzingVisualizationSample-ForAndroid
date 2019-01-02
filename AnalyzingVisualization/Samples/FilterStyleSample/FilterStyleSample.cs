@@ -48,8 +48,7 @@ namespace AnalyzingVisualization
 
         protected override void InitializeMap()
         {
-            MapView.MapUnit = GeographyUnit.DecimalDegree;
-            MapView.CurrentExtent = new RectangleShape(-128.455625, 88.474096875, -65.174375, -9.084496875);
+            MapView.CurrentExtent = new RectangleShape(-13768645, 7689721, -9044012, 110621);
 
             ShapeFileFeatureLayer statesLayer = new ShapeFileFeatureLayer(SampleHelper.GetDataPath("states.shp"));
             LayerOverlay layerOverlay = new LayerOverlay();

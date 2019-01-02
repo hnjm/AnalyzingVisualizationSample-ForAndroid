@@ -14,8 +14,7 @@ namespace AnalyzingVisualization
 
         protected override void InitializeMap()
         {
-            MapView.MapUnit = GeographyUnit.DecimalDegree;
-            MapView.CurrentExtent = new RectangleShape(-124.097208477811, 48.9471097666172, -110.242106301448, 28.7359794668483);
+            MapView.CurrentExtent = new RectangleShape(-13814438, 6265892, -12272095, 3342085);
 
             ShapeFileFeatureLayer usEarthquakeLayer = new ShapeFileFeatureLayer(SampleHelper.GetDataPath("usEarthquake_Simplified.shp"));
             LayerOverlay layerOverlay = new LayerOverlay();
