@@ -22,10 +22,15 @@ namespace AnalyzingVisualization
         protected override void InitializeMap()
         {
             MapView.MapUnit = GeographyUnit.Meter;
-            MapView.ZoomLevelSet = ThinkGeoCloudMapsOverlay.GetZoomLevelSet();
+            MapView.ZoomLevelSet = new ThinkGeoCloudMapsZoomLevelSet();
             MapView.CurrentExtent = new RectangleShape(-13886070, 5660597, -8906057, 2382985);
 
-            ThinkGeoCloudMapsOverlay thinkGeoCloudMapsOverlay = (ThinkGeoCloudMapsOverlay)MapView.Overlays["WMK"];
+            /*===========================================
+               Backgrounds for this sample are powered by ThinkGeo Cloud Maps and require
+               a Client ID and Secret. These were sent to you via email when you signed up
+               with ThinkGeo, or you can register now at https://cloud.thinkgeo.com.
+            ===========================================*/
+            ThinkGeoCloudRasterMapsOverlay thinkGeoCloudMapsOverlay = (ThinkGeoCloudRasterMapsOverlay)MapView.Overlays["WMK"];
             string baseFolder = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath;
             string cachePathFilename = Path.Combine(baseFolder, "MapSuiteTileCaches/SampleCaches.db");
             thinkGeoCloudMapsOverlay.TileCache = new SqliteBitmapTileCache(cachePathFilename, "SphericalMercator");
