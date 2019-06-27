@@ -1,3 +1,9 @@
+/*===========================================
+    Backgrounds for this sample are powered by ThinkGeo Cloud Maps and require
+    a Client ID and Secret. These were sent to you via email when you signed up
+    with ThinkGeo, or you can register now at https://cloud.thinkgeo.com.
+===========================================*/
+
 using Android.App;
 using Android.Content;
 using Android.Graphics;
@@ -129,12 +135,8 @@ namespace AnalyzingVisualization
         {
             if (!MapView.Overlays.Contains("WMK"))
             {
-                /*===========================================
-                   Backgrounds for this sample are powered by ThinkGeo Cloud Maps and require
-                   a Client ID and Secret. These were sent to you via email when you signed up
-                   with ThinkGeo, or you can register now at https://cloud.thinkgeo.com.
-                ===========================================*/
-                ThinkGeoCloudRasterMapsOverlay thinkGeoCloudMapsOverlay = new ThinkGeoCloudRasterMapsOverlay();
+                // Please input your ThinkGeo Cloud Client ID / Client Secret to enable the background map. 
+                ThinkGeoCloudRasterMapsOverlay thinkGeoCloudMapsOverlay = new ThinkGeoCloudRasterMapsOverlay("ThinkGeo Cloud Client ID", "ThinkGeo Cloud Client Secret");
 
                 string baseFolder = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath;
                 string cachePathFilename = System.IO.Path.Combine(baseFolder, "MapSuiteTileCaches/SampleCaches.db");
